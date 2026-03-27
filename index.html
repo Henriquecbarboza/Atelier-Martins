@@ -53,7 +53,7 @@
 
   <body>
     <header>
-       <div class="left"></div> <!-- espaço vazio -->
+       <div class="left"></div> 
       <div class="brand">
       
       <div class="logo">
@@ -73,7 +73,7 @@
           <i class="bxl bx-instagram"></i>
         </a>
         <a
-          href="https://wa.me/5548991643479?text=Olá%20tudo%20bem?%20Gostaria%20de%20comprar%20uma%20bolsa!"
+          href="https://wa.me/5548991643479?text=Olá,%20tudo%20bem?%20Gostaria%20de%20comprar%20uma%20bolsa!"
           class="nav-link"
         >
           <i class="bxl bx-whatsapp"></i>
@@ -88,30 +88,10 @@
         <h2>Bolsa Alice</h2>
         <h3>Fio de malha 100%</h3>
         <h3>R$ 150,00</h3>
-        <button class="custom-button">Compra rápida</button>
-        <dialog>
-          <h1>Pagamento PIX</h1>
-          <h2>Bolsa Alice</h2>
-          <p>
-            XXX - Banco xxxxxx <br>
-            Agência: XXXX <br>
-            C/C: XXXXX.X <br>
-            <br>
-            CHAVE PIX: XXX.XXX.XXX-XX <br>
-            VALOR: R$ 150,00 <br>
-            <br>
-            
-            Favor encaminhar comprovante do pagamento para:
-            WhatsApp: +55 (48) 99999-9999 <br>
-            <br>
-            Obrigada por escolher o Atelier Martins!
-          </p>
-          <button class="close-button">Fechar</button><br>
-           <a href="https://wa.me/5551999999999?text=Olá quero comprar a Bolsa Alice"
-       target="_blank">
-      <button class="buy-button">Falar no WhatsApp 📞</button>
-      </a>
-        </dialog>
+        <button class="custom-button" data-nome="Bolsa Alice">
+  Compra rápida
+</button>
+        
       </div>
       <div class="produto">
         <div class="img-container">
@@ -120,7 +100,9 @@
         <h2>Bolsa Maria</h2>
         <h3>Fio de malha 100%</h3>
         <h3>R$ 150,00</h3>
-        <button class="custom-button">Compra rápida</button>
+       <button class="custom-button" data-nome="Bolsa Maria">
+  Compra rápida
+</button>
       </div>
 
       <div class="produto">
@@ -130,7 +112,9 @@
           <h2>Bolsa Cecília</h2>
           <h3>Fio de malha 100%</h3>
         <h3>R$ 150,00</h3>
-        <button class="custom-button">Compra rápida</button>
+      <button class="custom-button" data-nome="Bolsa Cecília">
+  Compra rápida
+</button>
         </div>
       </div>
       <div class="produto">
@@ -140,9 +124,12 @@
           <h2>Bolsa Luiza</h2>
           <h3>Fio de malha 100%</h3>
         <h3>R$ 150,00</h3>
-        <button class="custom-button">Compra rápida</button>
+        <button class="custom-button" data-nome="Bolsa Luiza">
+  Compra rápida
+</button>
         </div>
       </div>
+      
       <br>
     </main>
     <footer>
@@ -151,5 +138,26 @@
         Fundada em 2025, nossa loja nasceu de um hobby que rapidamente se transformou em uma verdadeira paixão. O crochê, além de ser terapêutico, sempre trouxe momentos de leveza e bem-estar ao longo do processo de criação. Cada peça é feita com dedicação, cuidado e atenção aos detalhes. Mais do que produzir bolsas, buscamos compartilhar algo que é, acima de tudo, muito divertido e significativo.
       </h4>
     </footer>
+   <dialog id="modal">
+  <h1>Pagamento PIX</h1>
+  <h2 id="produto-nome"></h2>
+
+  <p>
+      XXX - Banco xxxxxx <br>
+            Agência: XXXX <br>
+            C/C: XXXXX.X <br><br>
+    CHAVE PIX: XXX.XXX.XXX-XX <br>
+    VALOR: R$ 150,00 <br><br>
+    Envie o comprovante no WhatsApp: +55 (48) 99999-9999<br>
+            <br>
+            Obrigada por escolher o Atelier Martins!
+  </p>
+
+  <a id="whatsapp-link" target="_blank">
+    <button class="comprar">Falar no WhatsApp 📞</button>
+  </a>
+  <br>
+  <button id="fechar" class="fechar">Fechar</button>
+</dialog>
   </body>
 </html>
