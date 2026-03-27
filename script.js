@@ -10,7 +10,7 @@ buttons.forEach((btn) => {
 
     nome.textContent = produto;
 
-    whatsapp.href = `https://wa.me/5551999999999?text=Olá, quero comprar a ${produto}`;
+    whatsapp.href = `https://wa.me/5599999999999?text=Olá, quero comprar a ${produto}`;
 
     modal.showModal();
   });
